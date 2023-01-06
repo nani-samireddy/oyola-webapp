@@ -6,12 +6,13 @@ nav {
   justify-content: space-between;
 }
 
-.title > h1{
+.title > h1 {
   font-weight: 900;
 }
 
 .links > a {
-  margin: 10 20px;
+  display: inline-block;
+  margin: 0 20px;
   padding: 10px 20px;
   border-radius: 50px;
 }
@@ -30,4 +31,87 @@ a {
 
 .registerButton:hover {
   color: black;
+}
+
+.nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #412722;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.5rem;
+}
+
+/*  Tablet */
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 30px 20px;
+  }
+
+  .links > a {
+    margin: 0px 10px;
+    padding: 5px 10px;
+  }
+}
+
+/* Smart Phone */
+
+@media only screen and (max-width: 325px) {
+
+  nav {
+    padding: 25px 10px;
+  }
+
+  .navBarContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+  }
+
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    grid-column: 3;
+  }
+
+  .links {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.958);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    transform: translateY(-100vh);
+    transition: 0.7s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  
+
+  .links > a {
+    margin: 0px 10px;
+    padding: 8px 30px;
+  }
+
+  .responsive_nav {
+    transform: none;
+  }
+
+  .links .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .links > a {
+    font-size: 1.5rem;
+  }
 }
