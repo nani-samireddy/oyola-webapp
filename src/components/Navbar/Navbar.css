@@ -59,13 +59,12 @@ a {
 
 /* Smart Phone */
 
-@media only screen and (max-width: 325px) {
-
+@media only screen and (max-width: 500px) {
   nav {
     padding: 25px 10px;
   }
 
-  .navBarContainer{
+  .navBarContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
@@ -93,8 +92,6 @@ a {
     justify-content: center;
     gap: 1.5rem;
   }
-
-  
 
   .links > a {
     margin: 0px 10px;
