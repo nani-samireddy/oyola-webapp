@@ -1,5 +1,6 @@
 import './Navbar.css';
 const Navbar = () => {
+
     return (
         <nav>
             <h1>OYOLA</h1>
