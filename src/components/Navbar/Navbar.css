@@ -1,0 +1,33 @@
+nav {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+nav > h1 {
+  font-weight: 700;
+}
+
+.links > a {
+  margin: 0 20px;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+a {
+  color: #412722;
+}
+
+.links > a:hover {
+  background-color: rgba(41, 36, 31, 0.107);
+  backdrop-filter: blur(40.5px);
+}
+.registerButton {
+  color: white;
+  background-color: #412722;
+}
+
+.registerButton:hover {
+  color: black;
+}
