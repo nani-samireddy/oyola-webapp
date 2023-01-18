@@ -1,0 +1,20 @@
+.ModalOutline {
+  position: relative;
+  background-color: white;
+  border-radius: 30px;
+  padding: 25px;
+  width: 100%;
+  height: auto;
+}
+
+.modalTitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.modalBody {
+  padding: 0px 10px 10px 10px;
+  text-align: center;
+}

@@ -1,0 +1,53 @@
+.herosectionOverlay {
+  height: auto;
+  width: 60vw;
+}
+.cbb {
+  height: auto;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 30px rgba(85, 44, 91, 0.3);
+  border-radius: 30px;
+  border: 0.1px solid #000000;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.options {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+}
+.options:hover,
+.activeModal {
+  background-color: #4127222d;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.options:hover{
+    background-color: #41272214;
+
+}
+.next:hover {
+  background-color: #ffffff;
+}
+.nextbtn:hover {
+  font-weight: bold;
+}
+
+.nextbtn {
+  background-color: #412722;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}

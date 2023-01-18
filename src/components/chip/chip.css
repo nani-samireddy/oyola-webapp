@@ -1,0 +1,38 @@
+.chip {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 8px 8px;
+  background-color: #d8cfe8;
+  margin: 10px;
+  border-radius: 59px;
+  cursor: pointer;
+  opacity: 0.5;
+  width: fit-content;
+}
+
+.selected {
+  opacity: 1;
+}
+
+.iconContainer {
+  height: 20px;
+  width: 20px;
+  background-color: #1d192b;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconContainer > svg {
+  height: 10px;
+  width: 10px;
+  fill: #ffffff;
+}
+
+.nameContainer {
+  padding: 0px 8px;
+}

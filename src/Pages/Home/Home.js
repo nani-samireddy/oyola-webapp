@@ -1,11 +1,15 @@
 import Navbar from "../../components/Navbar/Navbar";
 import './Home.css'
-
+import CustomBookingBox from "../../components/CustomBookingBox/CustomBookingBox";
 const Homepage = () => {
     return (
         <div>
             <Navbar />
-            <h1>Homepage</h1>
+            <div className="herosection">
+                <div className="customBookingBoxContainer">
+                    <CustomBookingBox />
+                </div>
+            </div>
         </div>
     );
 }

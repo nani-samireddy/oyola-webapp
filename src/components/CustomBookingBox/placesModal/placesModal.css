@@ -1,0 +1,43 @@
+.places-modal {
+  position: relative;
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+.places-modal-header {
+  text-align: center;
+}
+.places-modal-header-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.places-modal-search-bar {
+  padding: 20px 0px;
+}
+#placesSearchInput {
+  box-sizing: border-box;
+  border: 1.5px solid rgba(8, 4, 17, 0.74);
+  border-radius: 20px;
+  outline: none;
+  padding: 20px;
+  width: 90%;
+  justify-self: flex-start;
+  font-weight: 500;
+}
+.placesContainer {
+  width: 100%;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.selectedChipsContainer {
+  padding: 20px 10px;
+}
+.allChipsContainer {
+  padding: 20px 10px;
+}
