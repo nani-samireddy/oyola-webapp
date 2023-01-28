@@ -1,31 +1,32 @@
 import ModalOutline from "../ModalOutline/ModalOutline";
 import "./datesModal.css";
 
-import "antd/dist/reset.css";
-import { DatePicker } from "antd";
-import { useState } from "react";
-import moment from "moment";
-const { RangePicker } = DatePicker;
+import {
+  DatePicker,
+  useDatePickGetter,
+  useDatePickReset,
+} from "@bcad1591/react-date-picker";
 
 const DatesModal = () => {
 
-  const [dates, setDates] = useState([]);
-  console.log(dates);
-  
-  return (
+  const { pickedDates } = useDatePickGetter();
+  const resetFunc = useDatePickReset();
 
+  return (
     <ModalOutline title={"Select the dates "}>
       {
-        <RangePicker
-        disabledDate={(current) => current.isBefore(moment().subtract(1,"day"))}
-          onChange={(values) => {
-            setDates(
-              values.map((item) => {
-                return moment(item).format("YYYY-DD-MM");
-              })
-            );
-          }}
-        />
+        <div>
+          <DatePicker disablePreviousDays />
+
+          {/* Below part is just demonstration of the datepicker working */}
+          {/* Not part of the design */}
+          <hr />
+          <div>{pickedDates.firstPickedDate?.toString()}</div>
+          <div>{pickedDates.secondPickedDate?.toString()}</div>
+          <button type="button" onClick={resetFunc}>
+            Reset
+          </button>
+        </div>
       }
     </ModalOutline>
   );
