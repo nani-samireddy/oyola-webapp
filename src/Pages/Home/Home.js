@@ -3,7 +3,7 @@ import './Home.css'
 import CustomBookingBox from "../../components/CustomBookingBox/CustomBookingBox";
 const Homepage = () => {
     return (
-        <div>
+        <div className="home-section"> 
             <Navbar />
             <div className="herosection">
                 <div className="customBookingBoxContainer">

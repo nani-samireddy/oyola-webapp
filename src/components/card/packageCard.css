@@ -1,0 +1,84 @@
+.packageCard {
+  
+  margin: 30px;
+
+  width: 24vw;
+  background-color: #ffffff;
+  border: 0.1px solid rgb(0, 0, 0, 0.6);
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap:  15px;
+
+  padding-bottom: 20px;
+  
+  -webkit-box-shadow: 6px 7px 9px -1px rgba(156,156,156,1);
+  -moz-box-shadow: 6px 7px 9px -1px rgba(156,156,156,1);
+  box-shadow: 6px 7px 9px -1px rgba(156,156,156,1);
+}
+
+.packageCard:hover{
+  cursor: pointer;
+}
+
+.packageCard > img {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title > h4 {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+h4,
+hr {
+  padding: 3px 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#line {
+  margin: 3px 30px;
+  border-top: 1px solid rgb(0, 0, 0, 0.16);
+  background-color: transparent;
+}
+
+.details{
+  text-align: left;
+}
+
+/* /Mobile */
+@media screen and (min-width: 300px) {
+  .packageCard{
+    width: 90vw;
+  }
+}
+
+/* Tablet */
+
+@media screen and (min-width: 600px) {
+  .packageCard{
+    width: 40vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .packageCard{
+    width: 30vw;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .packageCard{
+    width: 25vw;
+  }
+}

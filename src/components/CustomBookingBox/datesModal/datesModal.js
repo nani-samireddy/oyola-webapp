@@ -11,7 +11,6 @@ const DatesModal = () => {
 
   const { pickedDates } = useDatePickGetter();
   const resetFunc = useDatePickReset();
-
   return (
     <ModalOutline title={"Select the dates "}>
       {

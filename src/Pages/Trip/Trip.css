@@ -1,0 +1,10 @@
+.trips-section{
+    height: 100vh;
+    width: 100vw;
+}
+
+.trips-section > h3{
+    text-align: center;
+    font-size:25px;
+    margin: 10px;
+}

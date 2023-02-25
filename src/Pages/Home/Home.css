@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+.home-section{
+  height: 100vh;
+  width: 100vw;
+}
 .herosection {
   background-color: transparent;
   margin-top: -25px;
